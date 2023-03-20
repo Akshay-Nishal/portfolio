@@ -1,8 +1,5 @@
 
 
-
-
-
 .work{
     margin-top: 120px;
     margin-bottom: 150px;
@@ -47,4 +44,23 @@
     .ids{
         margin-bottom: 2px;
     }
+}
+
+
+@media (max-width: 650px){
+    #contact h2{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    #contact .contact-info p{
+        font-size: 15px;
+    }
+    
+    #contact #contact-infos .contact-info img{
+        height: 18px;
+    }
+    .socials img{
+        height: 25px;
+    }
+
 }

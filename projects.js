@@ -1,8 +1,6 @@
 var card = document.querySelectorAll('.card')
-console.log(card);
 var active_cat = 0
 var ids = document.getElementsByTagName('button')
-console.log(ids);
 
 for (let i = 0; i < ids.length; i++) {
     ids[i].addEventListener('click',()=>{
@@ -21,9 +19,7 @@ for (let i = 0; i < ids.length; i++) {
 
 
 function dispcards(name){
-    console.log("disp func called");
     for (let i = 0; i < card.length; i++) {
-        console.log(card[i].id);
         if(card[i].id!==name){
             card[i].style.display='none'
         }
@@ -39,4 +35,33 @@ function displayall(){
     for (let i = 0; card.length; i++) {
         card[i].style.display='block'
     }
+}
+
+
+
+
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+const menu_items = document.querySelectorAll('nav .mainMenu li a');
+
+
+
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+// close menu when you click on a menu item 
+menu_items.forEach(item => {
+    item.addEventListener('click',function(){
+        close();
+    })
+})
+
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
+}
+function close(){
+    mainMenu.style.top = '-100%';
 }
