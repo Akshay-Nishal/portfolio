@@ -193,7 +193,7 @@ banner
 #banner{
     position: relative;
     overflow: hidden;
-    margin-top: 60px;
+    margin-top: 0px;
     /* margin: 80px 20px; */
     /* border-radius: 20px; */
     min-height: 100px;
@@ -219,6 +219,7 @@ banner
     z-index: -1;
 }
 #banner h1{
+    margin-top: 50px;
     font-size: 50px;
 }
 #banner h2{
@@ -294,6 +295,9 @@ banner
 
 
 @media (max-width: 1023px) {
+    /* #banner h1{
+        margin-top: 30px;
+    } */
     #banner .info #p1{
         display: none;
     }
@@ -302,9 +306,9 @@ banner
     }
 }
 @media (max-width: 768px) {
-    #banner{
+    /* #banner{
         margin-top: 50px;
-    }
+    } */
     #banner h1{
         font-size: 45px;
     }
@@ -399,6 +403,7 @@ works
 }
 .work #cards .card .work-info a img{
     height: 25px;
+    width: 25px;
 }
 
 
@@ -451,6 +456,7 @@ works
     }
     .work #cards .card .work-info a img{
         height: 20px;
+        width: 20px;
     }
 
     .work #view-more{
