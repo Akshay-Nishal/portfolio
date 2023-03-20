@@ -1,0 +1,45 @@
+.work{
+    margin-top: 120px;
+    margin-bottom: 150px;
+}
+.ids{
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ids button{
+    margin-bottom: 10px;
+    margin-right: 25px;
+    font-size: 17px;
+    background-color: rgb(189, 189, 189);
+    color: black;
+    border: 2px solid #969696;
+    border-radius: 5px;
+    padding: 5px;
+    transition: .5s ease;
+}
+.ids button:hover{
+    background-color: #969696;
+}
+.ids button.active{
+    background-color: #969696;
+}
+
+@media (max-width: 650px){
+    .work{
+        margin-top: 100px;
+        margin-bottom: 60px;
+    }
+    .ids button{
+        margin-right: 20px;
+        font-size: 15px;
+        padding: 5px;
+    }
+    .ids{
+        margin-bottom: 2px;
+    }
+}
