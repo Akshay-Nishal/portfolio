@@ -79,6 +79,12 @@ nav .mainMenu .closeMenu, .icons i {
     display: none;
     cursor: pointer;
 }
+
+.icons a{
+    text-decoration: none;
+    all: unset;
+
+}
 .fa-facebook:hover {
     color: rgb(0, 110, 255);
 }
