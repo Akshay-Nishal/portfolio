@@ -19,6 +19,26 @@ body{
     background-color: rgb(207, 207, 207);
 }
 
+#top-arrow{
+    /* display: none; */
+    position: fixed;
+    /* top:100px; */
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#top-arrow:hover{
+    scale: 1.15;
+}
+#top-arrow.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
 /**************
 nav
 **************/

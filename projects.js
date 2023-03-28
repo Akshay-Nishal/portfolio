@@ -65,3 +65,20 @@ function show(){
 function close(){
     mainMenu.style.top = '-100%';
 }
+
+
+
+var btn = $('#top-arrow');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 100) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0});
+});

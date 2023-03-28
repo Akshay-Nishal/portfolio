@@ -23,3 +23,36 @@ function show(){
 function close(){
     mainMenu.style.top = '-100%';
 }
+
+
+
+
+// const upar = document.getElementById('top-arrow')
+// upar.addEventListener('click',()=>{
+//     window.scroll(0,0)
+// })
+// window.addEventListener('scroll',()=>{
+//     if (window.pageXOffset > 100){
+//         upar.style.display='block'
+//     }
+//     else{
+//         upar.style.display='none'
+//     }
+// })
+
+
+
+var btn = $('#top-arrow');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 100) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0});
+});
