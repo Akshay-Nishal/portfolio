@@ -20,11 +20,11 @@ for (let i = 0; i < ids.length; i++) {
 
 function dispcards(name){
     for (let i = 0; i < card.length; i++) {
-        if(card[i].id!==name){
-            card[i].style.display='none'
+        if(card[i].classList.contains(name)){
+            card[i].style.display='block'
         }
         else{
-            card[i].style.display='block'
+            card[i].style.display='none'
 
         }
         
@@ -32,10 +32,12 @@ function dispcards(name){
 }
 
 function displayall(){
-    for (let i = 0; card.length; i++) {
+    for (let i = 0; i<15; i++) {
         card[i].style.display='block'
     }
 }
+
+displayall()
 
 
 

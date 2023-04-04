@@ -1,4 +1,6 @@
-
+.work #cards .card{
+    display: none;
+}
 
 .work{
     margin-top: 120px;
